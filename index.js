@@ -7,6 +7,10 @@ import { todoRouter } from './routes/todo.js';
 
 dotenv.config();
 
+const corsOptions = {
+  origin: "https://neeraj-todo-frontend.vercel.app",
+  credentials: true
+};
 
 const app = express();
 app.use(express.json());
